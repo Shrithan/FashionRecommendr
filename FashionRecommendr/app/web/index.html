@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter Webcam</title>
+  <script>
+    function startWebcam() {
+      const videoElement = document.getElementById('webcam');
+      const constraints = { video: true };
+      navigator.mediaDevices.getUserMedia(constraints)
+        .then((stream) => {
+          videoElement.srcObject = stream;
+        })
+        .catch((error) => {
+          console.error('Error accessing webcam: ', error);
+        });
+    }
+  </script>
+</head>
+<body>
+  <video id="webcam" autoplay playsinline style="width: 100%; height: auto;"></video>
+  <script src="main.dart.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+torch
+torchvision
+Pillow
+numpy
+opencv-python
+mediapipe
+Flask
+Flask-Cors
+google-generativeai
+selenium
+webdriver-manager
+requests
