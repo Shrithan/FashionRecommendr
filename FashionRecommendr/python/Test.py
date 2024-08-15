@@ -39,8 +39,8 @@ def final(hip1, hip2, shoulder, height, age, gender):
         return re.sub(r'\(.*?\)', '', text)
 
 
-    # Set up your API key
-    GOOGLE_API_KEY = 'AIzaSyDiBbMeQqp0ATTFmyHn6JJSujK3vV0-dcY'
+    # Set up your API key with your details
+    GOOGLE_API_KEY = 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX' 
 
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('gemini-1.5-flash')
@@ -231,10 +231,10 @@ def final(hip1, hip2, shoulder, height, age, gender):
     for thumbnail in thumbnails:
         print(thumbnail)
 
-    with open('/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/app/assets/image_urls.txt', 'w') as file:
+    with open('~FashionRecommendr/app/assets/image_urls.txt', 'w') as file:
         for url in thumbnails:
             file.write(url + '\n')
     
-    with open('/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/app/assets/links.txt', 'w') as file:
+    with open('~FashionRecommendr/app/assets/links.txt', 'w') as file:
         for link in links:
             file.write(link + '\n')
