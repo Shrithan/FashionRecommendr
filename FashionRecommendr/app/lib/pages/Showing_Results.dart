@@ -7,8 +7,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:app/elements.dart';  // Assuming elements.dart has the custom widgets like YellowCircle, DottedShape, and StraightLinesPainter.
 
 Future<List<Map<String, String>>> loadProductData() async {
-  final imageData = await rootBundle.loadString('/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/app/assets/image_urls.txt');
-  final linkData = await rootBundle.loadString('/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/app/assets/links.txt');
+  final imageData = await rootBundle.loadString('~FashionRecommendr/app/assets/image_urls.txt');
+  final linkData = await rootBundle.loadString('~FashionRecommendr/app/assets/links.txt');
   
   final imageUrls = imageData.split('\n').where((line) => line.isNotEmpty).toList();
   final productUrls = linkData.split('\n').where((line) => line.isNotEmpty).toList();
