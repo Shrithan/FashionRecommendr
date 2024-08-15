@@ -6,11 +6,12 @@ Please go to the deeplabv3_model_link.txt file in python/scripts
 
 How to run:
 1. Download all the libraries for python in the requirements.txt file in the python folder
-2. Run the app.py file before you run the flutter website.
-3. Run python3 path/to/your/app.py   
-4. Install flutter sdk
-5. Now run the command "flutter run" in terminal. Make sure you are in the app folder before running the command.
-6. Make sure to run the command in the same folder as the pubspec.yaml file
+2. Register for gemini API and get the key and put it Test.py 
+3. Run the app.py file before you run the flutter website.
+4. Run python3 path/to/your/app.py   
+5. Install flutter sdk
+6. Now run the command "flutter run" in terminal. Make sure you are in the app folder before running the command.
+7. Make sure to run the command in the same folder as the pubspec.yaml file
 
 
 /FashionRecommendr/app/lib/pages/Showing_Results.dart:
