@@ -14,7 +14,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
-app.config['UPLOAD_FOLDER'] = '/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/app/uploads'
+app.config['UPLOAD_FOLDER'] = '~FashionRecommendr/app/uploads'
 # UPLOAD_FOLDER = 'uploads'
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -187,7 +187,7 @@ def segment_and_draw(image_path, height, x):
 x = True
 # Initialize the model
 model = models.segmentation.deeplabv3_resnet101(pretrained=False)
-model.load_state_dict(torch.load("/Users/pavanadipuram/Workspace/Shrithan/Boost-Hacks-2/python/scripts/deeplabv3_resnet101_coco-586e9e4e.pth"), strict=False)
+model.load_state_dict(torch.load("~FashionRecommendr/python/scripts/deeplabv3_resnet101_coco-586e9e4e.pth"), strict=False)
 model.eval()
 
 
